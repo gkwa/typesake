@@ -1,5 +1,4 @@
-"on":
-- push
+"on": push
 jobs:
   test:
     runs-on: windows-2022
