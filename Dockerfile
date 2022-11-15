@@ -12,5 +12,7 @@ RUN choco install \
     jq \
     git \
     golang
+COPY wixtoolset_path.ps1 /Windows/temp/
+RUN powershell /Windows/temp/wixtoolset_path.ps1
 RUN choco install python --version 3.9
 RUN pip install --upgrade pip wheel
