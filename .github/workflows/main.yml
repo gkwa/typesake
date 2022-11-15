@@ -22,6 +22,7 @@ jobs:
         registry: docker.io
         tags: latest
         addTimestamp: true
+        addLatest: true
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
