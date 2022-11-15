@@ -20,6 +20,7 @@ jobs:
       with:
         image: taylorm/typesake
         registry: docker.io
+        tags: latest
         addTimestamp: true
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
