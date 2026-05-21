@@ -15,7 +15,7 @@ jobs:
     - run: echo "${{ steps.my-script.outputs.result }}"
     - name: Checkout
       uses: actions/checkout@v6
-    - uses: mr-smithers-excellent/docker-build-push@v6
+    - uses: mr-smithers-excellent/docker-build-push@v7
       name: Build & push Docker image
       with:
         image: taylorm/typesake
